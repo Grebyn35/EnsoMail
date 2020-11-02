@@ -8,6 +8,7 @@ public class CompositeDemoPattern {
         Soldier Major2 = new Soldier("Emil", Rank.Major, 90, 40);
 
 
+
         for(int i = 0; i<5; i++) {
             int pick = new Random().nextInt(Names.values().length);
             Names randomName = Names.values()[pick];
@@ -31,8 +32,7 @@ public class CompositeDemoPattern {
         General.add(Major2);
 
 
-
-        //System.out.println(General.getSubordinates());
+        System.out.println(Major1.getSubordinates());
         //Peon1.attack();
     }
 }
